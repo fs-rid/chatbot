@@ -1,0 +1,205 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    background-color: #F0EBE3;
+}
+
+.navbar {
+    width: 100%;
+    height: 75px;
+    background-color: #55AD9B ; /* Blue color */
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar a {
+    display: block;
+    color: #F0EBE3;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #F0EBE3;
+    color: #55AD9B;
+}
+.content {
+    margin-top: 100px;
+    padding: 20px;
+    width: 1300px;
+    height: 550px;
+
+background: rgba( 255, 255, 255, 0.45 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 5px );
+-webkit-backdrop-filter: blur( 5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.tagline {
+    font-size: 42px;
+    font-weight: 800;
+    color: #053027; 
+}
+
+.lines {
+    font-size: 20px;
+    font-weight: bold; 
+    color: whitesmoke
+}
+
+
+.cardholder {
+    display: flex; /* Use flexbox */
+    justify-content: space-around; /* Distribute items with equal space around */
+    align-items: center; /* Center align vertically */
+    height: 330px; /* Example height for the container */
+    
+    
+}
+.card {
+    position: relative;
+    width: 220px;
+    height: 320px;
+    background: #55AD9B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  
+  .card::before,
+  .card::after {
+    position: absolute;
+    content: "";
+    width: 20%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #F0EBE3;
+    transition: all 0.5s;
+  }
+  
+  .card::before {
+    top: 0;
+    right: 0;
+    border-radius: 0 15px 0 100%;
+  }
+  
+  .card::after {
+    bottom: 0;
+    left: 0;
+    border-radius: 0 100%  0 15px;
+  }
+  
+  .card:hover::before,
+  .card:hover:after {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transition: all 0.5s;
+  }
+  
+  .card:hover:after {
+    content: "HELLO";
+  }
+
+
+
+  /* External CSS styles for layout and design */
+
+.chatbot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F0EBE3;
+    padding: 10px;
+    
+    margin-top: 60px;
+    padding: 20px;
+    width: 1300px;
+    height: 550px;
+}
+
+.logo img {
+    max-width: 100px; /* Adjust maximum width of the logo */
+    height: auto;
+}
+
+.action button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+button {
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  background-color: #23c483;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+button:active {
+  transform: translateY(-1px);
+}
+
+
+
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f9f9f9;
+  width: 100%; /* Full width of the container */
+}
+
+.image-container img {
+  width: 400px; /* Specific width */
+  height: 300px; /* Specific height */
+  object-fit: cover; /* Ensure the image covers the specified dimensions without distortion */
+  display: block;
+}
